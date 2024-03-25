@@ -10,6 +10,15 @@ initializr:
         - name: Web
           id: web
           description: Servlet web application with Spring MVC and Tomcat
+    - name: Innobase
+      content:
+        - name: ndyd-component-uc
+          id: ndyd-component-uc
+          groupId: com.ndyd
+          artifactId: ndyd-component-uc
+          scope: compile
+          description: ndyd-component-uc.
+          starter: false
   languages:
     - name: Java
       id: java
@@ -22,12 +31,12 @@ initializr:
       default: false
   javaVersions:
     - id: 17
-      default: true
+      default: false
     - id: 11
       default: false
     - id: 1.8
       name: 8
-      default: false
+      default: true
   packagings:
     - name: Jar
       id: jar
